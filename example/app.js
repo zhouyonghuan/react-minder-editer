@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
-import ReactDemo from "../src/App"; // 引入组件
+import ReactDemo from "../src/KityMinder"; // 引入组件
 
-const App = () => (
+const Example = () => (
   <ReactDemo
     uploadUrl="/api/file/uploadAttachment"
     wsUrl={`ws://xwcase.gz.cvte.cn/api/case/2244/undefined/0/zsx`}
@@ -20,4 +20,4 @@ const App = () => (
     type="record"
   />
 );
-render(<App />, document.getElementById("root"));
+render(<Example />, document.getElementById("root"));

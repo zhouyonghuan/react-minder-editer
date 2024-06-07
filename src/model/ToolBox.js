@@ -1,6 +1,6 @@
 import { isEqual, unionWith, remove, isNull, isUndefined } from "lodash";
 import $ from "jquery";
-import marked from "marked/lib/marked";
+// import marked from "marked/lib/marked";
 
 class ToolBox {
   // 构造函数
@@ -29,7 +29,7 @@ class ToolBox {
   enterNotePreview = (e) => {
     const vm = this;
     this.previewTimer = setTimeout(function () {
-      vm.preview(e.node);
+      // vm.preview(e.node);
     }, 300);
   };
 
