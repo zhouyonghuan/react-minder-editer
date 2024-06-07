@@ -1,4 +1,4 @@
-import * as editorCommand from "./../command/EditorCommand";
+import * as editorCommand from "../command/EditorCommand";
 import { compare } from "../common/helpers/jsondiff";
 import { isUndefined } from "lodash";
 

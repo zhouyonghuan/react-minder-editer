@@ -10,14 +10,14 @@ import ToolBox from "../model/ToolBox.js";
 import Runtime from "../model/Runtime.js";
 import Navigator from "../model/Navigator.js";
 import NoteRender from "./NoteRender/index.js";
-import SearchRenderV2 from "../pages/SearchRenderV2/index.js";
-import ToolBoxRender from "../pages/ToolBox/index.js";
-import EditUsersRender from "../pages/EditUsers/index.js";
-import NavigatorRender from "../pages/NavigatorRender/index.js";
+import SearchRenderV2 from "./SearchRenderV2/index.js";
+import ToolBoxRender from "./ToolBox/index.js";
+import EditUsersRender from "./EditUsers/index.js";
+import NavigatorRender from "./NavigatorRender/index.js";
 import ClipBoard from "../model/ClipBoard.js";
 import Mind from "./Mind/index.js";
-import Exterior from "../pages/Exterior/index.js";
-import ShotCutModal from "../pages/ShotCut/index.js";
+import Exterior from "./Exterior/index.js";
+import ShotCutModal from "./ShotCut/index.js";
 import {
   Input,
   Tabs,

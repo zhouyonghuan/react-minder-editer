@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import ReactDemo from "../src/KityMinder"; // 引入组件
+import ReactDemo from "../src/react-Xminder-editer/KityMinder"; // 引入组件
 
 const Example = () => (
   <ReactDemo

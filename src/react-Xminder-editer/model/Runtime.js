@@ -1,5 +1,5 @@
 // import EditorMode from '@/app/modes/Kityminder';
-import * as editorCommand from "./../command/EditorCommand";
+import * as editorCommand from "../command/EditorCommand";
 import { isNull, isUndefined, isEmpty } from "lodash";
 
 import $ from "jquery";

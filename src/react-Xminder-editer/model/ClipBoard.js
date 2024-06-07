@@ -1,11 +1,11 @@
 import { isEmpty, remove, isEqual, get, isNull } from "lodash";
-import { randomString } from "./../common/helpers/utils";
+import { randomString } from "../common/helpers/utils";
 
 import * as copy from "copy-to-clipboard";
-import { uploadFile } from "./../common/helpers/uploadFile";
-import { loadImageSize } from "./../common/helpers/utils";
+import { uploadFile } from "../common/helpers/uploadFile";
+import { loadImageSize } from "../common/helpers/utils";
 import config from "../constant/config.minder";
-import * as editorCommand from "./../command/EditorCommand";
+import * as editorCommand from "../command/EditorCommand";
 class Clipboard {
   // 构造函数
   constructor(props) {
