@@ -3,12 +3,12 @@ import "./KityMinder.less";
 import "kity";
 import "./assets/kityminder-core/kityminder.core.js";
 import "./assets/kityminder-core/kityminder.core.css";
-import * as editorCommand from "../command/EditorCommand.js";
-import HotBox from "../model/HotBox.js";
-import History from "../model/History.js";
-import ToolBox from "../model/ToolBox.js";
-import Runtime from "../model/Runtime.js";
-import Navigator from "../model/Navigator.js";
+import * as editorCommand from "../react-Xminder-editer/command/EditorCommand.js";
+import HotBox from "./model/HotBox.js";
+import History from "./model/History.js";
+import ToolBox from "./model/ToolBox.js";
+import Runtime from "./model/Runtime.js";
+import Navigator from "./model/Navigator.js";
 import NoteRender from "./NoteRender/index.js";
 import SearchRenderV2 from "./SearchRenderV2/index.js";
 import ToolBoxRender from "./ToolBox/index.js";
@@ -30,7 +30,7 @@ import {
   Drawer,
 } from "antd";
 import { isUndefined, isArray, endsWith } from "lodash";
-import Websocket from "../websocket/Websocket.js";
+import Websocket from "../react-Xminder-editer/websocket/Websocket";
 const dataJson = { 
   'data': { 
     'id': 2,

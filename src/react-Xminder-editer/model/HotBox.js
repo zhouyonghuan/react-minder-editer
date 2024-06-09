@@ -1,4 +1,4 @@
-import * as editorCommand from "../react-Xminder-editer/command/EditorCommand";
+import * as editorCommand from "../command/EditorCommand";
 import "hotbox-ui";
 import "hotbox-ui/hotbox.css";
 

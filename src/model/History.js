@@ -1,5 +1,5 @@
-import * as editorCommand from "../command/EditorCommand";
-import { compare } from "../common/helpers/jsondiff";
+import * as editorCommand from "../react-Xminder-editer/command/EditorCommand";
+import { compare } from "../react-Xminder-editer/common/helpers/jsondiff";
 import { isUndefined } from "lodash";
 
 class History {

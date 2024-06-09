@@ -1,4 +1,4 @@
-import config from "../react-Xminder-editer/constant/config.minder";
+import config from "../constant/config.minder";
 
 class Navigator {
   // 构造函数
