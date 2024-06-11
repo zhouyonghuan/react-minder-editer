@@ -30,7 +30,7 @@ import {
   Drawer,
 } from "antd";
 import { isUndefined, isArray, endsWith } from "lodash";
-import Websocket from "../react-Xminder-editer/websocket/Websocket";
+// import Websocket from "../react-Xminder-editer/websocket/Websocket";
 const dataJson = { 
   'data': { 
     'id': 2,
