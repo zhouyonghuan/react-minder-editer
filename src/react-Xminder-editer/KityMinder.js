@@ -30,6 +30,7 @@ import {
   Drawer,
 } from "antd";
 import { isUndefined, isArray, endsWith } from "lodash";
+import ExportXMind from '../react-Xminder-editer/plugins/ExportXMind.js'
 // import Websocket from "../react-Xminder-editer/websocket/Websocket";
 const dataJson = { 
   'data': { 
@@ -439,6 +440,19 @@ class KetyMinder extends React.Component {
       );
     }
   };
+// 导出文件
+ onExportFile = ()=>{
+  console.log('点击了导出');
+  this.minder.exportData('json').then((res)=>{
+    console.log('====================================');
+    console.log('ExportXMind', ExportXMind.xmind(JSON.parse(res),null,'/t'));
+    console.log('====================================');
+    
+    
+
+  })
+
+ }
 
   render() {
     const operations = (
@@ -487,6 +501,13 @@ class KetyMinder extends React.Component {
             ? "连接房间异常,请保存数据"
             : ""}
         </span>
+        <Button type="primary"
+        onClick={()=>{
+          this.onExportFile()
+         
+          
+        }}
+        >导出</Button>
         <Button
           type="link"
           onClick={() => {

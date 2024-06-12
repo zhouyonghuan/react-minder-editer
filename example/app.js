@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import ReactDemo from "../src/react-Xminder-editer/KityMinder"; // 引入组件
+import KityMinder from "../src/react-Xminder-editer/KityMinder"; // 引入组件
 
 const Example = () => (
-  <ReactDemo
+  <KityMinder
     uploadUrl="/api/file/uploadAttachment"
     wsUrl={`ws://xwcase.gz.cvte.cn/api/case/2244/undefined/0/zsx`}
     onResultChange={() => {
