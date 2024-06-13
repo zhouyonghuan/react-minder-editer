@@ -9,6 +9,7 @@ const dataJson = {
 }
 const Example = () => (
   <KityMinder
+    sourceDate={[dataJson]}
     uploadUrl="/api/file/uploadAttachment"
     wsUrl={`ws://xwcase.gz.cvte.cn/api/case/2244/undefined/0/zsx`}
     onResultChange={() => {

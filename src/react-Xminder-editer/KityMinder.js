@@ -34,7 +34,7 @@ import ExportXMind from '../react-Xminder-editer/plugins/ExportXMind.js'
 // import Websocket from "../react-Xminder-editer/websocket/Websocket";
 const dataJson = { 
   'data': { 
-    'id': 2,
+    'id': 1,
     'text': '中心主题',
   },
 }
@@ -44,6 +44,7 @@ class KetyMinder extends React.Component {
     super(props);
     this.myRef = React.createRef();
     (this.state = {
+      data: props.sourceDate.length ?  props.sourceDate[0]:{},
       url: "",
       editText: "",
       // 使用的资源
@@ -110,6 +111,9 @@ class KetyMinder extends React.Component {
   };
 
   componentDidMount = () => {
+    console.log('====================================');
+    console.log(this.state,'data');
+    console.log('====================================');
     // 处理caseId 以及userName;
     // ws://xwcase.gz.cvte.cn/api/case/2245/undefined/0/zsx
     // this.initData(this.props.wsUrl);
@@ -617,15 +621,15 @@ class KetyMinder extends React.Component {
                 enableAnimation: true,
                 defaultTheme: "fresh-blue-compat",
               });
-              this.minder.importJson(dataJson)
+              this.minder.importJson(this.state.data)
               window.minder = this.minder;
-              window.minder.editor = this.userName;
-              window.minder.type =
-                this.props.type === "compare" ||
-                this.props.type === "record" ||
-                this.props.type === "backup"
-                  ? "disable"
-                  : "";
+              // window.minder.editor = this.userName;
+              // window.minder.type =
+              //   this.props.type === "compare" ||
+              //   this.props.type === "record" ||
+              //   this.props.type === "backup"
+              //     ? "disable"
+              //     : "";
             }
           }}
         >
