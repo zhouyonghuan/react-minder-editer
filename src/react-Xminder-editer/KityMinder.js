@@ -444,12 +444,7 @@ class KetyMinder extends React.Component {
  onExportFile = ()=>{
   console.log('点击了导出');
   this.minder.exportData('json').then((res)=>{
-    console.log('====================================');
-    console.log('ExportXMind', ExportXMind.xmind(JSON.parse(res),null,'/t'));
-    console.log('====================================');
-    
-    
-
+    ExportXMind.xmind(JSON.parse(res).root,'苏怡山','xmind')
   })
 
  }
@@ -649,7 +644,7 @@ class KetyMinder extends React.Component {
                 enableAnimation: true,
                 defaultTheme: "fresh-blue-compat",
               });
-              this.minder.importJson(dataJson)
+              // this.minder.importJson(dataJson)
               window.minder = this.minder;
               window.minder.editor = this.userName;
               window.minder.type =
