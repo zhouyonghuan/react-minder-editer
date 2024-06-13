@@ -423,7 +423,7 @@ class KetyMinder extends React.Component {
  onExportFile = ()=>{
   console.log('点击了导出');
   this.minder.exportData('json').then((res)=>{
-    ExportXMind.xmind(JSON.parse(res).root,'苏怡山','xmind')
+    ExportXMind.xmind(JSON.parse(res).root,'思维导图','xmind')
   })
 
  }

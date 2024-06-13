@@ -42,15 +42,15 @@ const transformToXmind = async (data, name='光宇脑图') => {
     //   }
     // }
     // // 超链接
-    // if (node.data.hyperlink !== undefined) {
-    //   newData.href = node.data.hyperlink
-    // }
+    if (node.data.hyperlink !== undefined) {
+      newData.href = node.data.hyperlink
+    }
     // // 标签
     // if (node.data.tag !== undefined) {
     //   newData.labels = node.data.tag || []
     // }
     // 图片
-    // handleNodeImageToXmind(node, newNode, waitLoadImageList, imageList)
+    handleNodeImageToXmind(node, newNode, waitLoadImageList, imageList)
     // 概要
       // const { summary, summaries } = parseNodeGeneralizationToXmind(node)
       // if (isRoot) {
