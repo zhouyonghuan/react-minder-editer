@@ -36,32 +36,7 @@ const dataJson = {
   'data': { 
     'id': 2,
     'text': '中心主题',
-    // 'image': 'http://image.namedq.com/uploads/20191011/18/1570789062-WiOwJhGFDp.jpg',
-    // 'imageSize': { 'width': 200, 'height': 200 }
   },
-  'children': [
-      { 
-          'data': { 'text': 'Designsy', 'priority': 1, 'id': 3 },
-          'children': [
-              { 
-                'data': { 'text': 'Designsy', 'id': 4 },
-                'children': [
-                  { 'data': { 'text': 'Designsy', 'id': 5 } },
-                  { 'data': { 'text': 'Designsy', 'id': 5 } },
-                  { 'data': { 'text': 'Designsy', 'id': 5 } },
-                ]
-              },
-              { 'data': { 'text': 'Designsy', 'id': 5 } },
-              { 'data': { 'text': 'Designsy', 'id': 62 } },
-              { 'data': { 'text': 'Designsy', 'id': 73 } },
-              { 'data': { 'text': 'Designsy', 'id': 84 } }
-          ]
-      },
-      { 'data': { 'text': 'Designsy', 'priority': 2, 'id': 9 } },
-      { 'data': { 'text': 'Designsy', 'priority': 3, 'id': 102 } },
-      { 'data': { 'text': 'Designsy', 'priority': 4, 'id': 113 } },
-      { 'data': { 'text': 'Designsy', 'priority': 5, 'id': 124 } }
-  ]
 }
 
 class KetyMinder extends React.Component {
@@ -499,8 +474,6 @@ class KetyMinder extends React.Component {
         <Button type="primary"
         onClick={()=>{
           this.onExportFile()
-         
-          
         }}
         >导出</Button>
         <Button
@@ -644,7 +617,7 @@ class KetyMinder extends React.Component {
                 enableAnimation: true,
                 defaultTheme: "fresh-blue-compat",
               });
-              // this.minder.importJson(dataJson)
+              this.minder.importJson(dataJson)
               window.minder = this.minder;
               window.minder.editor = this.userName;
               window.minder.type =
