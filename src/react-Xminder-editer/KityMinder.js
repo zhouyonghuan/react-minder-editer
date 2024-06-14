@@ -621,15 +621,39 @@ class KetyMinder extends React.Component {
                 enableAnimation: true,
                 defaultTheme: "fresh-blue-compat",
               });
-              this.minder.importJson(this.state.data)
+              this.minder.importJson(
+                { 
+                  'data': { 
+                    'id': 2,
+                    'text': 'Design project',
+                  },
+                  'children': [
+                      { 
+                          'data': { 'text': 'Designsy', 'priority': 1, 'id': 3 },
+                          'children': [
+                              { 
+                                'data': { 'text': 'Designsy', 'id': 4 },
+                                'children': [
+                                  { 'data': { 'text': 'Designsy', 'id': 5 } },
+                                  { 'data': { 'text': 'Designsy', 'id': 5 } },
+                                  { 'data': { 'text': 'Designsy', 'id': 5 } },
+                                ]
+                              },
+                              { 'data': { 'text': 'Designsy', 'id': 5 } },
+                              { 'data': { 'text': 'Designsy', 'id': 62 } },
+                              { 'data': { 'text': 'Designsy', 'id': 73 } },
+                              { 'data': { 'text': 'Designsy', 'id': 84 } }
+                          ]
+                      },
+                      { 'data': { 'text': 'Designsy', 'priority': 2, 'id': 9 } },
+                      { 'data': { 'text': 'Designsy', 'priority': 3, 'id': 102 } },
+                      { 'data': { 'text': 'Designsy', 'priority': 4, 'id': 113 } },
+                      { 'data': { 'text': 'Designsy', 'priority': 5, 'id': 124 } }
+                  ]
+              }
+              )
               window.minder = this.minder;
-              // window.minder.editor = this.userName;
-              // window.minder.type =
-              //   this.props.type === "compare" ||
-              //   this.props.type === "record" ||
-              //   this.props.type === "backup"
-              //     ? "disable"
-              //     : "";
+             
             }
           }}
         >
