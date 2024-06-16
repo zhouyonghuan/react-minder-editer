@@ -2,7 +2,7 @@ import * as React from "react";
 import "./style.less";
 import { Modal, Form, Upload, Button, notification, message } from "antd";
 import { partial, isUndefined } from "lodash";
-import * as editorComand from "../../../command/EditorCommand";
+import * as editorComand from "../../command/EditorCommand";
 
 class App extends React.Component {
   constructor(props) {

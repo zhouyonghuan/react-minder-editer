@@ -12,7 +12,7 @@ const webpackConfigDev = {
   mode: "development",
 
   entry: {
-    app: [resolve("../example/app.js")],
+    app: [resolve("../src/index.js")],
   },
 
   output: {

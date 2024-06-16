@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Input } from "antd";
-import * as editorCommand from "./../../../command/EditorCommand";
+import * as editorCommand from "../../command/EditorCommand";
 import "./style.less";
 
 class App extends React.Component {

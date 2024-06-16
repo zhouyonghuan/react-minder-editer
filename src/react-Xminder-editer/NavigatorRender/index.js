@@ -1,8 +1,8 @@
 import * as React from "react";
 import "./style.less";
 import { partial } from "lodash";
-import * as editorCommand from "../../command/EditorCommand";
-import config from "./../../constant/config.minder";
+import * as editorCommand from "../command/EditorCommand";
+import config from "../constant/config.minder";
 import { Icon } from "antd";
 
 // interface IProps {

@@ -11,7 +11,7 @@ import {
 } from "antd";
 import "./style.less";
 import { partial, isEmpty, isUndefined, isString } from "lodash";
-import * as editorCommand from "../../command/EditorCommand";
+import * as editorCommand from "../command/EditorCommand";
 import HyperLink from "./HyperLink";
 import NodeLink from "./NodeLink";
 import ImageUpload from "./Image";

@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./style.less";
-import config from "../../../constant/config.minder";
+import config from "../../constant/config.minder";
 import { partial } from "lodash";
 
 class App extends React.Component {

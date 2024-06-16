@@ -8,22 +8,6 @@ const dataJson = {
   },
 }
 const Example = () => (
-  <KityMinder
-    sourceDate={[dataJson]}
-    uploadUrl="/api/file/uploadAttachment"
-    wsUrl={`ws://xwcase.gz.cvte.cn/api/case/2244/undefined/0/zsx`}
-    onResultChange={() => {
-      console.log("o1nResultChange callback");
-    }}
-    editorStyle={{ height: "calc(100vh - 100px)" }}
-    readOnly={false}
-    editorRef={(editorNode) => {
-      console.log(editorNode);
-    }}
-    onSave={() => {
-      console.log("sss");
-    }}
-    type="record"
-  />
+ <>55</>
 );
 render(<Example />, document.getElementById("root"));

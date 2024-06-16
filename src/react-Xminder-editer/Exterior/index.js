@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./style.less";
 import { Icon, Popover, Divider, Menu, Dropdown } from "antd";
-import * as editorComand from "../../command/EditorCommand";
+import * as editorComand from "../command/EditorCommand";
 import { partial } from "lodash";
-import config from "../../constant/config.minder";
+import config from "../constant/config.minder";
 
 class App extends React.Component {
   constructor(props) {

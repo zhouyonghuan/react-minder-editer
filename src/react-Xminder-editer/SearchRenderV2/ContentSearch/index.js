@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Input, Tree, Icon } from "antd";
-import * as editorCommand from "../../../command/EditorCommand";
+import * as editorCommand from "../../command/EditorCommand";
 const { TreeNode } = Tree;
 import { isString, cloneDeep, isUndefined } from "lodash";
 

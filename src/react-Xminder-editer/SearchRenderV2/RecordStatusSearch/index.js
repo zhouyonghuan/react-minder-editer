@@ -4,7 +4,7 @@ const { Option } = Select;
 const { TreeNode } = Tree;
 import { isUndefined } from "lodash";
 
-import * as editorCommand from "../../../command/EditorCommand";
+import * as editorCommand from "../../command/EditorCommand";
 
 class App extends React.Component {
   constructor(props) {

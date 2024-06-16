@@ -14,7 +14,7 @@ import SearchRenderV2 from "./SearchRenderV2/index.js";
 import ToolBoxRender from "./ToolBox/index.js";
 import EditUsersRender from "./EditUsers/index.js";
 import NavigatorRender from "./NavigatorRender/index.js";
-import ClipBoard from "../model/ClipBoard.js";
+import ClipBoard from "./model/ClipBoard.js";
 import Mind from "./Mind/index.js";
 import Exterior from "./Exterior/index.js";
 import ShotCutModal from "./ShotCut/index.js";
@@ -44,7 +44,6 @@ class KetyMinder extends React.Component {
     super(props);
     this.myRef = React.createRef();
     (this.state = {
-      data: props.sourceDate.length ?  props.sourceDate[0]:{},
       url: "",
       editText: "",
       // 使用的资源
