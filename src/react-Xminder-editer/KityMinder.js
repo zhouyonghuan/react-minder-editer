@@ -43,7 +43,7 @@ class KetyMinder extends React.Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
-    (this.state = {
+    this.state = {
       url: "",
       editText: "",
       // 使用的资源
@@ -90,7 +90,7 @@ class KetyMinder extends React.Component {
       isScore: "0",
       minderStatus: "normal",
       searchDrawerVisible: false,
-    }),
+    },
       (this.baseVersion = 0);
     window.editor = {};
     this.timeoutObj = null;
@@ -657,7 +657,7 @@ class KetyMinder extends React.Component {
           }}
         >
           <Spin
-            spinning={this.state.spinning}
+            spinning={false}
             style={{
               position: "absolute",
               width: "100%",
